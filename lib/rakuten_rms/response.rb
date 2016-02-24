@@ -4,7 +4,7 @@ module RakutenRms
 
     def initialize(response)
       @response = response
-      @status   = response.status
+      @status   = response.try(:status) || response.try(:code)
       @headers  = response.headers
       @body     = response.body
     end
