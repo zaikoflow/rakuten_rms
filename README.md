@@ -1,8 +1,6 @@
 # RakutenRms
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rakuten_rms`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby client for Rakuten RMS
 
 ## Installation
 
@@ -22,7 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```rb
+require "rakuten_rms"
+
+client = RakutenRms::Client.new(service_secret: "service_secret", license_key: "license_key")
+
+search_options = {}
+cliemt.order.get_order(search_options)
+```
 
 ## Development
 
@@ -32,7 +37,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rakuten_rms.
+Bug reports and pull requests are welcome on GitHub at https://github.com/zaikoflow/rakuten_rms.
 
 
 ## License
