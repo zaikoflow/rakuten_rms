@@ -10,7 +10,7 @@ module RakutenRms
     end
 
     def success?
-      response.success?
+      !!(@status.to_s =~ /\A2[0-9]{2}\z/)
     end
 
     def to_h
