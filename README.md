@@ -2,6 +2,11 @@
 
 Ruby client for Rakuten RMS
 
+[![Build Status](https://travis-ci.org/zaikoflow/rakuten_rms.png)](https://travis-ci.org/zaikoflow/rakuten_rms)
+[![Code Climate](https://codeclimate.com/github/zaikoflow/rakuten_rms/badges/gpa.svg)](https://codeclimate.com/github/zaikoflow/rakuten_rms)
+[![Test Coverage](https://codeclimate.com/github/zaikoflow/rakuten_rms/badges/coverage.svg)](https://codeclimate.com/github/zaikoflow/rakuten_rms)
+[![Dependency Status](https://gemnasium.com/zaikoflow/rakuten_rms.svg)](https://gemnasium.com/zaikoflow/rakuten_rms)
+
 ## Installation
 
 Add this line to your application's Gemfile:
