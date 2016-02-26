@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/get?itemUrl=itemUrl
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - ESA c2VydmljZV9zZWNyZXQ6bGljZW5zZV9rZXk=
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Feb 2016 16:10:24 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/xml; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>item.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>600136d5-9968-45b4-8715-b477c785b023</requestId><requests><itemUrl>XXXXX-XX</itemUrl></requests></status><itemGetResult><code>N000</code><item><itemUrl>xxxxx-xx</itemUrl><itemNumber>XXXXX-XX</itemNumber><itemName>itemName</itemName><itemPrice>2880</itemPrice><genreId>212505</genreId><catalogId>4962752005350</catalogId><images><image><imageUrl>http://image.rakuten.co.jp/xxxxx/cabinet/04484845/xxxxx.jpg</imageUrl><imageAlt>imageAlt</imageAlt></image></images><descriptionForPC>descriptionForPC</descriptionForPC><descriptionForSmartPhone>descriptionForSmartPhone</descriptionForSmartPhone><options/><tagIds/><catchCopyForPC>catchCopyForPC</catchCopyForPC><catchCopyForMobile>catchCopyForMobile</catchCopyForMobile><descriptionBySalesMethod/><isSaleButton>true</isSaleButton><isDocumentButton>false</isDocumentButton><isInquiryButton>true</isInquiryButton><isStockNoticeButton>false</isStockNoticeButton><itemLayout>5</itemLayout><isIncludedTax>true</isIncludedTax><isIncludedPostage>true</isIncludedPostage><isIncludedCashOnDeliveryPostage>false</isIncludedCashOnDeliveryPostage><orderLimit>-1</orderLimit><postage>-1</postage><isNoshiEnable>false</isNoshiEnable><isTimeSale>false</isTimeSale><isUnavailableForSearch>false</isUnavailableForSearch><isAvailableForMobile>true</isAvailableForMobile><isDepot>false</isDepot><point><pointRate/><pointRateStart/><pointRateEnd/></point><itemInventory><inventoryType>1</inventoryType><inventories><inventory><inventoryCount>1</inventoryCount><normalDeliveryDateId>2</normalDeliveryDateId><isBackorder>false</isBackorder><isRestoreInventoryFlag>false</isRestoreInventoryFlag></inventory></inventories><inventoryQuantityFlag>1</inventoryQuantityFlag></itemInventory><asurakuDeliveryId>1</asurakuDeliveryId><sizeChartLinkCode/><reviewDisp>2</reviewDisp><displayPriceId>-1</displayPriceId><categories><categoryInfo><categoryId>101</categoryId><isPluralItemPage>false</isPluralItemPage></categoryInfo></categories><itemWeight>999999999</itemWeight><layoutCommonId>0</layoutCommonId><layoutMapId>0</layoutMapId><textSmallId>0</textSmallId><lossLeaderId>0</lossLeaderId><textLargeId>0</textLargeId></item></itemGetResult></result>
+    http_version: 
+  recorded_at: Wed, 24 Feb 2016 16:10:24 GMT
+recorded_with: VCR 3.0.1
