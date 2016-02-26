@@ -2,3 +2,7 @@ language: ruby
 rvm:
   - 2.3.0
 before_install: gem install bundler -v 1.11.2
+script: bundle exec rake
+env:
+  global:
+    - secure: "WFg9o3UWLF5mltpzajdCt+QWAvMAN6wyV8peijqXUsRBoU5LExiw9Pi5Kzx2e5wO5Kn7XeWD6rKOizmYaHfydJ34VblZs2tOXfNWtfJ6sZow3Tj0bmNR5ykmP65Hhv5KTg/DfnMz3K1djLNI4AQZ7tbmQJxYJbnyTYRVAuLa1kGX65KfgmXrfo1MVozUTIi6DageYXmBR3RQzXBRn+YL+jVHTCIkD1FUPfwWpkBQpTf4vviyUIEi0Ejy9GVehMKOP8HNueOujlHfC++vb4UZs+s+92VY3QQaxf4h40nDZ6yOFsgoxc2SlgAmkZ/4uCucsMiZTG808W6mtaIkyd/sBmbiNlSIK2+aoTmaY+arNA5jl4/MN3f44KoZHV2eP0F9wdQq1K9rbOsnu9aGr4YREquDWfDZii0kaamjj8IJJviEhssBq9yRNhOa4KGzPGmcgvhK/ixBZYrL+s3D9nvVNDOTRtL+SVKL0cZ7rUHY1st3qSQEReJvUOhR5wg/HUTROjIejsM3uxylLyO9L4KdziUv2wq2NRA0JiXoYSo9pWX6Zezp5Y364+/skv8v6HnUXPJbfmD8xAT4R2P+fjma2+L44vlbsj28byFP6iGB0/9R7q6qR5VWea7NkhVRwvzAnYlsed0jjoWTMQxbS71GCqWaJOTuzGZXs0EEGFsKhhg="
