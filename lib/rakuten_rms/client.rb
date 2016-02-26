@@ -1,5 +1,7 @@
 module RakutenRms
   class Client
+    attr_reader :configuration
+
     BASE_URL = "https://api.rms.rakuten.co.jp"
     BASE_PATH = "/es/1.0"
 
