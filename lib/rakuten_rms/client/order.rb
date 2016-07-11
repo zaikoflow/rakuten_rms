@@ -1,7 +1,7 @@
 module RakutenRms
   class Client
     class Order
-      API_URL = "https://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws?WSDL"
+      API_URL = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
       def initialize(configuration)
         @configuration = configuration

@@ -9,11 +9,11 @@ module RakutenRms
       # Old style authentication
       @user_name = options[:user_name]
       @shop_url  = options[:shop_url]
-      @auth_key  = options[:auth_key]
+      @auth_key  = options[:auth_key] || authorization()
     end
 
     def authorization
-      "ESA " + Base64.strict_encode64(@service_secret + ":" + @license_key)
+      "ESA " + Base64.strict_encode64(@service_secret + ":" + @license_key) if @service_secret and @license_key
     end
   end
 end
